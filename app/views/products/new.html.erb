@@ -1,5 +1,4 @@
-<h1>New Product</h1>
-<div class="container p-4">
+<div class="container p-3">
   <div class="row">
     <div class="col-md-4 mx-auto">
       <div class="card shadow">
@@ -7,8 +6,8 @@
           <h5 align="center">Nuevo producto</h5>
           <%= render 'form', product: @product %>
 
-          <%= link_to 'Back', products_path %>
-          
+          <%= link_to 'Back', products_path, class:"mt-2"%>
+
         </div>
       </div>
     </div>

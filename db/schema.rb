@@ -28,10 +28,6 @@ ActiveRecord::Schema.define(version: 2020_08_18_071515) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
   create_table "products", force: :cascade do |t|
     t.string "nombre"
     t.integer "cantidad"
@@ -52,7 +48,6 @@ ActiveRecord::Schema.define(version: 2020_08_18_071515) do
     t.index ["resource_type", "resource_id"], name: "index_roles_on_resource_type_and_resource_id"
   end
 
->>>>>>> 94cd724cfacaaddf88363c56fa68b402bc9ca7d2
   create_table "suppliers", force: :cascade do |t|
     t.string "nombre"
     t.string "direccion"
@@ -61,7 +56,6 @@ ActiveRecord::Schema.define(version: 2020_08_18_071515) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
->>>>>>> a1fe0b34bf40f59d313449046f903b221ec77ce8
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
