@@ -1,0 +1,16 @@
+<div class="container p-4">
+  <div class="row">
+    <div class="col-md-4 mx-auto">
+      <div class="card shadow">
+        <div class="card-body">
+          <h5 align="center">Editing Client</h5>
+
+          <%= render 'form', client: @client %>
+
+          <%= link_to 'Show', @client %> |
+          <%= link_to 'Back', clients_path %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
