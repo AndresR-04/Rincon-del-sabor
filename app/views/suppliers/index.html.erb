@@ -27,9 +27,9 @@
             <td><%= supplier.nombre %></td>
             <td><%= supplier.direccion %></td>
             <td><%= supplier.telefono %></td>
-            <td><%= link_to 'Show', supplier %></td>
-            <td><%= link_to 'Edit', edit_supplier_path(supplier) %></td>
-            <td><%= link_to 'Destroy', supplier, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td align="center"><%= link_to 'Mostrar', supplier, class: "btn btn-success btn-xs" %></td>
+            <td align="center"><%= link_to 'Editar', edit_supplier_path(supplier), class:"btn btn-info btn-xs"%></td>
+            <td align="center"><%= link_to 'Borrar', supplier, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger btn-xs"%></td>
           </tr>
         <% end %>
       </tbody>
