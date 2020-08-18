@@ -60,3 +60,9 @@ gem 'simple_form', '~> 5.0', '>= 5.0.2'
 gem 'bootstrap', '~> 4.5', '>= 4.5.2'
 
 gem 'font_awesome5_rails', '~> 1.2'
+
+#roles
+gem 'rolify', '~> 5.3'
+
+#verificacion del rol 
+gem 'pundit', '~> 2.1'
