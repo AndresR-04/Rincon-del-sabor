@@ -1,0 +1,24 @@
+<form>
+  <img src="<%= @profile.photo.try(:url) %>" alt="" width="300" height="300">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="nombre">Nombre:</label>
+      <tr>
+        <td><%=@profile.name%></td>
+      </tr>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="identification">Identificacion:</label>
+      <tr>
+        <td><%=@profile.identification%></td>
+      </tr>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="telephone">Telefono:</label>
+    <tr>
+      <td><%=@profile.telephone%></td>
+    </tr>
+  </div>
+  <%=link_to "Editar perfil", edit_profile_path(@profile), {class: "btn btn-info"} %>
+</form>

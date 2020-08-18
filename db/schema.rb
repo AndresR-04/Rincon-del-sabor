@@ -37,6 +37,20 @@ ActiveRecord::Schema.define(version: 2020_08_18_071515) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "profiles", force: :cascade do |t|
+    t.string "foto"
+    t.string "nombre"
+    t.string "apellido"
+    t.string "direccion"
+    t.string "ciudad"
+    t.string "estado"
+    t.string "zip"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_profiles_on_user_id"
+  end
+
   create_table "roles", force: :cascade do |t|
     t.string "name"
     t.string "resource_type"
